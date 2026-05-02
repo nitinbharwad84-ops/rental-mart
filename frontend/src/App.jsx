@@ -8,6 +8,8 @@ const Login = React.lazy(() => import('./pages/Login'));
 const Register = React.lazy(() => import('./pages/Register'));
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
 const Layout = React.lazy(() => import('./components/Layout'));
+const Orders = React.lazy(() => import('./pages/Orders'));
+const Products = React.lazy(() => import('./pages/Products'));
 const Placeholder = React.lazy(() => import('./pages/Placeholder'));
 
 const ProtectedRoute = ({ children }) => {
@@ -33,8 +35,8 @@ function App() {
             } 
           />
           <Route path="/rentals" element={<ProtectedRoute><Layout><Dashboard /></Layout></ProtectedRoute>} />
-          <Route path="/orders" element={<ProtectedRoute><Layout><Placeholder title="Order Management" /></Layout></ProtectedRoute>} />
-          <Route path="/products" element={<ProtectedRoute><Layout><Placeholder title="Product Catalog" /></Layout></ProtectedRoute>} />
+          <Route path="/orders" element={<ProtectedRoute><Layout><Orders /></Layout></ProtectedRoute>} />
+          <Route path="/products" element={<ProtectedRoute><Layout><Products /></Layout></ProtectedRoute>} />
           <Route path="/reporting" element={<ProtectedRoute><Layout><Placeholder title="Reporting & Analytics" /></Layout></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Layout><Placeholder title="Settings" /></Layout></ProtectedRoute>} />
           <Route path="*" element={<Navigate to="/" />} />

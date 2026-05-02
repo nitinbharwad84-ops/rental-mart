@@ -15,6 +15,16 @@ I have successfully initialized and built the core foundation of the **Rental-Ma
     - Interactive **Rental List** with mock data.
     - Functional **Filtering** (All, Quotation, Reserved, Pickedup) using Zustand state management.
     - Dynamic **Status Badges** with color-coded feedback.
+- **Order Management (Phase 7)**:
+    - Dedicated **Orders Page** with a comprehensive tabular view.
+    - Advanced controls including **Export** and **New Order** actions.
+    - Integrated **Filtering** and **Search** across a larger dataset.
+    - Staggered row animations for a premium feel.
+- **Product Management (Phase 7)**:
+    - Interactive **Product Grid** with high-quality images and availability tags.
+    - **Category Filtering** (Cameras, Lenses, Lighting, etc.) for quick access.
+    - Real-time **Inventory Status** tracking (Available, Rented, Maintenance).
+    - Responsive card-based design with hover effects.
 - **Visual Excellence**:
     - **Premium Blue Palette**: Lightest Blue (`#E4F9FF`), Sky Blue (`#62D0FF`), and Dark Blue (`#1886FF`).
     - **Framer Motion**: Smooth staggered entry animations and page transitions.

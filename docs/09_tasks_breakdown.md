@@ -26,5 +26,11 @@
 - **Task T5.3**: Add Framer Motion `motion.` prefixes to key elements.
 
 ## Phase 6
-- **Task T6.1**: Implement Media Queries for Mobile/Tablet.
-- **Task T6.2**: Final styling pass (Gradients, Shadows, Micro-interactions).
+- **Task T6.1**: Implement Media Queries for Mobile/Tablet. [IN PROGRESS]
+- **Task T6.2**: Final styling pass (Gradients, Shadows, Micro-interactions). [DONE]
+
+## Phase 7: Order & Product Management
+- **Task T7.1**: Create `Orders` page with detailed list and filtering.
+- **Task T7.2**: Create `Products` page with catalog and availability status.
+- **Task T7.3**: Integrate Order/Product navigation in Sidebar.
+- **Task T7.4**: Implement Mock CRUD (Add/Edit Order).

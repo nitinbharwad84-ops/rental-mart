@@ -26,6 +26,9 @@ Two primary stores will be used:
 - `/login`: Authentication
 - `/register`: User Onboarding
 - `/rentals`: Detailed Rental Management
+- `/orders`: Order Management & History
+- `/products`: Product Catalog & Inventory
+- `/reporting`: Analytics & Reports
 - `/settings`: User/Tenant Preferences
 
 ## 5. Styling Strategy
