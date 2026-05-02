@@ -1,0 +1,142 @@
+.header {
+  height: var(--header-height);
+  background-color: var(--white);
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  border-bottom: 1px solid rgba(24, 134, 255, 0.05);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.menu-toggle {
+  display: none;
+  color: var(--text-secondary);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--lightest-blue);
+  padding: 8px 16px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  gap: 10px;
+  border: 1px solid transparent;
+  transition: var(--transition-fast);
+}
+
+.search-bar:focus-within {
+  border-color: var(--medium-blue);
+  background-color: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-icon {
+  color: var(--text-secondary);
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  width: 100%;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.icon-btn {
+  position: relative;
+  color: var(--text-secondary);
+  transition: var(--transition-fast);
+}
+
+.icon-btn:hover {
+  color: var(--dark-blue);
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--error);
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 24px;
+  border-left: 1px solid rgba(24, 134, 255, 0.1);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: var(--lightest-blue);
+  border: 2px solid var(--medium-blue);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .user-info {
+    display: none;
+  }
+  
+  .search-bar {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    display: none;
+  }
+}
